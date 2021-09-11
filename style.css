@@ -1,0 +1,118 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(62, 169, 240), rgb(236, 9, 199));
+}
+
+h1{
+    color:  rgba(62, 169, 240, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.616);
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+#calc{
+    max-width: 25vw;
+    min-width: 25%;
+    height: 80%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 5px 5px 5px 5px;
+}
+
+#buttonarea{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+    height: 70%;
+    min-width: 100%;
+    border-radius: 3px;
+}
+
+.inputbox{
+    resize: none;
+    border: none;
+    outline: none;
+    text-align: right;
+    background: none;
+    caret-color: transparent;
+    width: 100%;
+
+}
+
+#inputarea{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid whitesmoke; */
+    border-radius: 3px;
+    background-color: rgba(245, 245, 245, 0.048) ;
+
+    
+}
+
+#inputboxbottom{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#outputBoxTop{
+    font-size: 1.75rem;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+button{
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    border-radius: 3px;
+    background-color: rgba(245, 245, 245, 0.404);
+    font-size: 1.25rem;
+
+    
+}
+
+button:active{
+    background-color: rgba(245, 245, 245, 0.596);
+    border: 1.5px solid rgba(212, 212, 212, 0.63);
+}
+
+@media (max-width: 400px){
+    
+#calc{
+    max-width: 60vw;
+    min-width: 55vw;
+    height: 80%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 2px 2px 2px 2px;
+}
+}
+
+@media (max-width: 750px){
+    
+    #calc{
+        max-width: 50vw;
+        min-width: 40vw;
+        height: 80%;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 3px;
+        padding: 2px 2px 2px 2px;
+    }
+    }
